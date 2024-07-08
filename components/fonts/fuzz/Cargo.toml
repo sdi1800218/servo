@@ -1,0 +1,46 @@
+[package]
+name = "servoshell-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+fonts = { path = ".." }  # Correct the path to the fonts crate
+servo_url = { path = "../../url" }
+style = { workspace = true }
+servo_arc = { workspace = true }
+arbitrary = { version = "1", optional = true, features = ["derive"] }
+
+[[bin]]
+name = "fuzz_new_from_data"
+path = "fuzz_targets/fuzz_new_from_data.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "fuzz_new_for_remote_web_font"
+path = "fuzz_targets/fuzz_new_for_remote_web_font.rs"
+test = false
+doc = false
+bench = false
+
+
+[[bin]]
+name = "fuzz_fallback_font_selection"
+path = "fuzz_targets/fuzz_fallback_font_selection.rs"
+test = false
+doc = false
+bench = false
+
+
+[[bin]]
+name = "float_to_fixed"
+path = "fuzz_targets/float_to_fixed.rs"
+test = false
+doc = false
+bench = false
