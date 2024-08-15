@@ -1,0 +1,37 @@
+INFO: Loaded 1 modules   (942681 inline 8-bit counters): 942681 [0x55cd2f33c370, 0x55cd2f4225c9), 
+INFO: Loaded 1 PC tables (942681 PCs): 942681 [0x55cd2f4225d0,0x55cd30284b60), 
+INFO:      467 files found in /home/kali/servo-src/components/fonts/fuzz/corpus/fuzz_fallback_font_selection
+INFO: -max_len is not provided; libFuzzer will not generate inputs larger than 4096 bytes
+INFO: seed corpus: files: 467 min: 5b max: 9b total: 2599b rss: 134Mb
+#468    INITED cov: 931 ft: 978 corp: 463/2579b exec/s: 0 rss: 134Mb
+#16384  pulse  cov: 931 ft: 978 corp: 463/2579b lim: 165 exec/s: 8192 rss: 134Mb
+#32768  pulse  cov: 931 ft: 978 corp: 463/2579b lim: 328 exec/s: 8192 rss: 134Mb
+#65536  pulse  cov: 931 ft: 978 corp: 463/2579b lim: 656 exec/s: 9362 rss: 134Mb
+#131072 pulse  cov: 931 ft: 978 corp: 463/2579b lim: 1305 exec/s: 8192 rss: 135Mb
+#262144 pulse  cov: 931 ft: 978 corp: 463/2579b lim: 2605 exec/s: 7943 rss: 159Mb
+#1048576        pulse  cov: 931 ft: 978 corp: 463/2579b lim: 4096 exec/s: 6853 rss: 308Mb
+#2097152        pulse  cov: 931 ft: 978 corp: 463/2579b lim: 4096 exec/s: 6452 rss: 502Mb
+#4194304        pulse  cov: 931 ft: 978 corp: 463/2579b lim: 4096 exec/s: 6345 rss: 530Mb
+#6761405        REDUCE cov: 931 ft: 978 corp: 463/2578b lim: 4096 exec/s: 6289 rss: 532Mb L: 6/9 MS: 2 EraseBytes-CMP- DE: "\354\026"-
+#6820066        REDUCE cov: 931 ft: 978 corp: 463/2577b lim: 4096 exec/s: 6279 rss: 532Mb L: 5/9 MS: 1 EraseBytes-
+#16777216       pulse  cov: 931 ft: 978 corp: 463/2577b lim: 4096 exec/s: 6197 rss: 535Mb
+#28752591       REDUCE cov: 931 ft: 978 corp: 463/2575b lim: 4096 exec/s: 6188 rss: 535Mb L: 5/9 MS: 4 CopyPart-PersAutoDict-ChangeByte-EraseBytes- DE: "\354\026"-
+#33554432       pulse  cov: 931 ft: 978 corp: 463/2575b lim: 4096 exec/s: 6208 rss: 535Mb
+#39126708       REDUCE cov: 931 ft: 978 corp: 463/2574b lim: 4096 exec/s: 6213 rss: 535Mb L: 6/9 MS: 2 EraseBytes-ChangeByte-
+#39189659       REDUCE cov: 931 ft: 978 corp: 463/2573b lim: 4096 exec/s: 6215 rss: 535Mb L: 5/9 MS: 1 EraseBytes-
+#44713778       REDUCE cov: 931 ft: 978 corp: 463/2571b lim: 4096 exec/s: 6212 rss: 535Mb L: 5/9 MS: 3 EraseBytes-ChangeByte-ChangeByte-
+#46975773       REDUCE cov: 931 ft: 978 corp: 463/2569b lim: 4096 exec/s: 6204 rss: 535Mb L: 5/9 MS: 5 EraseBytes-ChangeByte-ChangeBinInt-ChangeBit-ChangeBit-
+#61857332       REDUCE cov: 931 ft: 978 corp: 463/2568b lim: 4096 exec/s: 6188 rss: 536Mb L: 6/9 MS: 4 ChangeBinInt-ChangeBit-EraseBytes-ChangeByte-
+#61865776       REDUCE cov: 931 ft: 978 corp: 463/2567b lim: 4096 exec/s: 6187 rss: 536Mb L: 5/9 MS: 4 ChangeBinInt-ChangeByte-CopyPart-EraseBytes-
+#81438079       REDUCE cov: 931 ft: 978 corp: 463/2566b lim: 4096 exec/s: 6161 rss: 536Mb L: 6/9 MS: 2 ChangeByte-EraseBytes-
+#81477166       REDUCE cov: 931 ft: 978 corp: 463/2565b lim: 4096 exec/s: 6161 rss: 536Mb L: 5/9 MS: 2 CrossOver-EraseBytes-
+#134217728      pulse  cov: 931 ft: 978 corp: 463/2565b lim: 4096 exec/s: 6159 rss: 536Mb
+#193683435      REDUCE cov: 931 ft: 978 corp: 463/2564b lim: 4096 exec/s: 6203 rss: 537Mb L: 6/9 MS: 3 ChangeByte-ChangeBit-EraseBytes-
+#193688341      REDUCE cov: 931 ft: 978 corp: 463/2563b lim: 4096 exec/s: 6203 rss: 537Mb L: 5/9 MS: 1 EraseBytes-
+#536870912      pulse  cov: 931 ft: 978 corp: 463/2563b lim: 4096 exec/s: 6199 rss: 538Mb
+#866201565      REDUCE cov: 931 ft: 978 corp: 463/2562b lim: 4096 exec/s: 6196 rss: 539Mb L: 6/9 MS: 3 ChangeByte-ChangeBinInt-EraseBytes-
+#866219277      REDUCE cov: 931 ft: 978 corp: 463/2561b lim: 4096 exec/s: 6196 rss: 539Mb L: 5/9 MS: 2 ShuffleBytes-EraseBytes-
+#1073741824     pulse  cov: 931 ft: 978 corp: 463/2561b lim: 4096 exec/s: 6203 rss: 539Mb
+#2147483648     pulse  cov: 931 ft: 978 corp: 463/2561b lim: 4096 exec/s: 6208 rss: 540Mb
+#4294967296   pulse  cov: 931 ft: 978 corp: 463/2561b lim: 4096 exec/s: 6198 rss: 540Mb
+

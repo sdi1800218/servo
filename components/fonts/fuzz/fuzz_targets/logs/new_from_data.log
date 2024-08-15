@@ -1,0 +1,39 @@
+     Running `/home/kali/servo-src/target/x86_64-unknown-linux-gnu/release/fuzz_new_from_data -artifact_prefix=/home/kali/servo-src/components/fonts/fuzz/artifacts/fuzz_new_from_data/ /home/kali/servo-src/components/fonts/fuzz/corpus/fuzz_new_from_data`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 3399497878
+INFO: Loaded 1 modules   (943055 inline 8-bit counters): 943055 [0x55ac8a5da1f0, 0x55ac8a6c05bf), 
+INFO: Loaded 1 PC tables (943055 PCs): 943055 [0x55ac8a6c05c0,0x55ac8b5242b0), 
+INFO:      125 files found in /home/kali/servo-src/components/fonts/fuzz/corpus/fuzz_new_from_data
+INFO: -max_len is not provided; libFuzzer will not generate inputs larger than 4096 bytes
+INFO: seed corpus: files: 125 min: 1b max: 513b total: 8892b rss: 135Mb
+#126    INITED cov: 144 ft: 264 corp: 30/1739b exec/s: 0 rss: 135Mb
+#16384  pulse  cov: 144 ft: 264 corp: 30/1739b lim: 675 exec/s: 5461 rss: 135Mb
+#32768  pulse  cov: 144 ft: 264 corp: 30/1739b lim: 837 exec/s: 4681 rss: 135Mb
+#65536  pulse  cov: 144 ft: 264 corp: 30/1739b lim: 1156 exec/s: 4681 rss: 135Mb
+#125889 REDUCE cov: 144 ft: 264 corp: 30/1737b lim: 1756 exec/s: 4496 rss: 135Mb L: 259/513 MS: 3 ChangeByte-CopyPart-EraseBytes-
+#131072 pulse  cov: 144 ft: 264 corp: 30/1737b lim: 1806 exec/s: 4519 rss: 135Mb
+#262144 pulse  cov: 144 ft: 264 corp: 30/1737b lim: 3112 exec/s: 4599 rss: 144Mb
+#524288 pulse  cov: 144 ft: 264 corp: 30/1737b lim: 4096 exec/s: 4599 rss: 186Mb
+#1048576        pulse  cov: 144 ft: 264 corp: 30/1737b lim: 4096 exec/s: 4854 rss: 276Mb
+#2097152        pulse  cov: 144 ft: 264 corp: 30/1737b lim: 4096 exec/s: 4821 rss: 444Mb
+#4194304        pulse  cov: 144 ft: 264 corp: 30/1737b lim: 4096 exec/s: 4809 rss: 540Mb
+#8388608        pulse  cov: 144 ft: 264 corp: 30/1737b lim: 4096 exec/s: 4963 rss: 542Mb
+#15836238       NEW    cov: 144 ft: 276 corp: 31/3954b lim: 4096 exec/s: 4880 rss: 542Mb L: 2217/2217 MS: 4 InsertRepeatedBytes-CMP-CopyPart-CopyPart- DE: "\000\000"-
+#15836634       REDUCE cov: 144 ft: 276 corp: 31/3889b lim: 4096 exec/s: 4880 rss: 542Mb L: 2152/2152 MS: 1 EraseBytes-
+#15839130       REDUCE cov: 144 ft: 276 corp: 31/3857b lim: 4096 exec/s: 4879 rss: 542Mb L: 2120/2120 MS: 1 EraseBytes-
+#15846432       REDUCE cov: 144 ft: 276 corp: 31/3813b lim: 4096 exec/s: 4878 rss: 542Mb L: 2076/2076 MS: 2 InsertRepeatedBytes-EraseBytes-
+#16002491       REDUCE cov: 144 ft: 276 corp: 31/3795b lim: 4096 exec/s: 4874 rss: 558Mb L: 2058/2058 MS: 4 CMP-ChangeBit-CopyPart-EraseBytes- DE: "\377\377"-
+#16210604       REDUCE cov: 144 ft: 276 corp: 31/3793b lim: 4096 exec/s: 4876 rss: 562Mb L: 2056/2056 MS: 3 CMP-ChangeBit-EraseBytes- DE: "\001\000"-
+#16262150       REDUCE cov: 144 ft: 276 corp: 31/3791b lim: 4096 exec/s: 4877 rss: 562Mb L: 2054/2054 MS: 1 EraseBytes-
+#16545021       REDUCE cov: 144 ft: 276 corp: 31/3789b lim: 4096 exec/s: 4873 rss: 567Mb L: 2052/2052 MS: 1 EraseBytes-
+#16777216       pulse  cov: 144 ft: 276 corp: 31/3789b lim: 4096 exec/s: 4879 rss: 567Mb
+#17617002       REDUCE cov: 144 ft: 276 corp: 31/3787b lim: 4096 exec/s: 4886 rss: 568Mb L: 2050/2050 MS: 1 EraseBytes-
+#22046898       REDUCE cov: 144 ft: 276 corp: 31/3786b lim: 4096 exec/s: 4865 rss: 568Mb L: 2049/2049 MS: 1 EraseBytes-
+#33554432       pulse  cov: 144 ft: 276 corp: 31/3786b lim: 4096 exec/s: 4802 rss: 568Mb
+#67108864       pulse  cov: 144 ft: 276 corp: 31/3786b lim: 4096 exec/s: 4791 rss: 568Mb
+#134217728      pulse  cov: 144 ft: 276 corp: 31/3786b lim: 4096 exec/s: 4782 rss: 568Mb
+#268435456      pulse  cov: 144 ft: 276 corp: 31/3786b lim: 4096 exec/s: 4812 rss: 571Mb
+#536870912      pulse  cov: 144 ft: 276 corp: 31/3786b lim: 4096 exec/s: 4789 rss: 573Mb
+#1073741824     pulse  cov: 144 ft: 276 corp: 31/3786b lim: 4096 exec/s: 4783 rss: 583Mb
+#2147483648     pulse  cov: 144 ft: 276 corp: 31/3786b lim: 4096 exec/s: 4791 rss: 583Mb
+

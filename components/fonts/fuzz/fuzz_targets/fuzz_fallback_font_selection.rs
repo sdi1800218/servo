@@ -1,9 +1,9 @@
 #![no_main]
 use libfuzzer_sys::fuzz_target;
-use fonts::FallbackFontSelectionOptions;
+use fonts::{FallbackFontSelectionOptions, fallback_font_families};
 
 fuzz_target!(|data: (char, Option<char>)| {
     let (character, next_character) = data;
-    let _ = FallbackFontSelectionOptions::new(character, next_character);
+    let _ = fallback_font_families(FallbackFontSelectionOptions::new(character, next_character));
 });
 
